@@ -65,10 +65,11 @@
                                         <td> {$issue_date} </td>
                                         <td> {$country} </td>
                                         <td>
-                                            <a class='btn btn-success' href='admin_dashboard.php?q=addquotation&id={$quotation_id}&status=accepted}'>
+                                            <a name='status' class='btn btn-success' href='admin_dashboard.php?q=addquotation&id={$quotation_id}&status=accepted&quotation_id={$quotation_id}}'>
                                                 Accept
                                             </a>
-                                            <a class='btn btn-danger' href='admin_dashboard.php?q=addquotation&id={$quotation_id}&status=rejected}'> Reject
+                                            <a name='status' class='btn btn-danger' href='admin_dashboard.php?q=addquotation&id={$quotation_id}&status=rejected&quotation_id={$quotation_id}}'>
+                                                 Reject
                                             </a>
                                         </td>
                                     </tr>
